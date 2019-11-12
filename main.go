@@ -20,7 +20,18 @@ func main() {
 		now := time.Now()
 		hour, min, sec := now.Hour(), now.Minute(), now.Second()
 
-		colon := getColon()
+		var colon placeholder
+		if sec%2 == 0 {
+			colon = placeholder{
+				"     ",
+				"     ",
+				"     ",
+				"     ",
+				"     ",
+			}
+		} else {
+			colon = getColon()
+		}
 
 		clock := [...]placeholder{
 			digits[hour/10], digits[hour%10],
