@@ -87,3 +87,14 @@ func getDigits() [10]placeholder {
 
 	return digits
 }
+
+func getColons() placeholder {
+	colons := placeholder{
+		"     ",
+		"  █  ",
+		"     ",
+		"  █  ",
+		"     ",
+	}
+	return colons
+}
