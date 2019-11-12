@@ -88,13 +88,13 @@ func getDigits() [10]placeholder {
 	return digits
 }
 
-func getColons() placeholder {
-	colons := placeholder{
+func getColon() placeholder {
+	colon := placeholder{
 		"     ",
 		"  █  ",
 		"     ",
 		"  █  ",
 		"     ",
 	}
-	return colons
+	return colon
 }
