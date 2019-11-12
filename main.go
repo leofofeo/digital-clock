@@ -18,14 +18,14 @@ func main() {
 	colons := getColons()
 
 	clock := [...]placeholder{
-		digits[1], digits[0],
+		digits[hour/10], digits[hour%10],
 		colons,
-		digits[4], digits[3],
+		digits[min/10], digits[min%10],
 		colons,
-		digits[6], digits[2],
+		digits[sec/10], digits[sec%10],
 	}
 
-	drawDigits(digits)
+	// drawDigits(digits)
 	fmt.Println()
 	drawClock(clock)
 
